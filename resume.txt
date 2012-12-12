@@ -1,0 +1,222 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+David Robertsdave.a.roberts@gmail.com
+
+440.503.5974
+
+1em
+
+1em
+
+Certifications
+
+
+
+*
+	[Security Clearance]
+	US Citizen with  security clearance
+	[PMI ACP:]
+	 Agile Certified Practitioner since September 2012
+
+
+
+Experience
+
+
+	
+
+	
+	
+		General Dynamics Advanced Information Systems
+		Fairfax, VA
+	
+
+	
+		Web Developer  Scrum Master
+		June 2011 -- Present
+	*
+		 Scrum master and developer for seven person  Agile development team.
+    Held weekly face-to-face meetings with customer and product owner.  Delivered production-ready software every two weeks.
+		Built indicator database using  Ruby on Rails / jQuery / CSS to coordinate cyber information sharing and manage cyber risks for US-CERT and the Department of Homeland Security
+    Managed source code using  Git SCM, code reviews with  GitLab, continuous integration using  Jenkins,  Test Driven Development (TDD) using  Cucumber / RSpec, and documents using  
+		Prototyped storage application for network intrusion prevention and detection system using  PHP CodeIgniter.
+	
+
+	
+	
+		EMC (NetWitness)
+		Reston, VA
+	
+
+	
+		Software Engineer
+		October 2010 -- June 2011
+	*
+		Produced enterprise software that produced real-time network forensic engineering.
+		Developed applications using  Java / Spring / Hibernate to monitor and analyze network threats.
+		Maintained client management software used to monitor sensitive information on workplace systems, written in  C
+    Utilized  Amazon EC2 cloud services to perform  service oriented architecture tasks for NetWitness Spectrum.  Spectrum was the winner of the 2011 American Business Awards New Product or Service of the Year Stevie Award.
+	
+
+	
+	
+		Network Designs
+		Washington, DC
+	
+
+	
+		Web Developer
+		September 2008 -- October 2010
+	*
+		Maintained two large scale  C ASP.NET web applications with  SQL Server 2008 back ends for the FAA.
+		Programmed data managers for  Microsoft SharePoint systems.
+	
+	
+	
+	
+		London Computer Systems
+		Cincinnati, OH
+	
+
+	
+		Application Developer
+		May 2007 -- August 2008
+	*
+		Developed accounting software for property management companies using  C ASP.NET and  Visual Basic 6
+		Created and designed web applications from the ground up to interact with existing customer databases
+	
+	
+	
+	
+		General Electric
+		Cincinnati, OH
+	
+
+	
+		Information Management Leadership Program
+		May -- August 2004, 2005, 2006
+	*
+		Allowed auditors to perform on site field audits using tablet PCs by creating an app in  VBA / Excel to replace paper and pencil audits.
+		Deployed and bootstrapped  Unix-based systems using  Perl. Certified a new hardware technology stack to run internal applications.
+		Reduced deployment costs by initializing servers to run specialized applications on commodity hardware.
+		Laid out a workflow to identify non-value-added steps. Reduced the number of steps required in GE's software change process. Shortened the turn around time for software fixes.
+	
+	
+	
+	
+		BitWise Communications LLC
+		Cincinnati, OH
+	
+
+	
+		Founding Partner
+		May 2003 -- August 2006
+	*
+		Co-founded a software development company while attending university.
+		Performed company management operations including creating the marketing website.
+    Developed a cross platform  (Windows, Mac and Linux) software client in   and the  wxWidgets library.
+		Client allows for encrypted chat, file transfers, and voice chat.
+	
+	
+
+
+
+
+
+-0.4em
+Education
+
+
+	
+	
+	
+	
+		Miami University
+		Oxford, OH
+	
+
+	
+		Computer Science, Master of Computer Science
+		2005 -- 2007
+	*
+		Graduated 2007 Cumulative GPA 3.5
+		Research Area: Interdisciplinary tool between Mechanical Engineering and Systems Analysis to study discontinuous systems
+	
+
+	
+	
+		Miami University
+		Oxford, OH
+	
+
+	
+		Systems Analysis, Bachelor of Applied Science
+		2001 -- 2005
+	*
+		Double major: Systems Analysis and Computer Science
+    Taught supplemental courses to provide help for students taking Java courses
+		Graduated 2005 Cum Laude 3.5 GPA
+	
+
+
+
+
+
+-0.4em
+Projects / Certifications
+
+
+
+A list of my personal projects can be found at http://github.com/daverobertsgithub.com/daveroberts
+*
+	[Happy Puppy:]
+	In my spare time, I created an  MVC PHP web framework called HappyPuppy
+
+
+
+
