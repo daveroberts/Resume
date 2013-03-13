@@ -1,0 +1,16 @@
+<resume>
+  <job>
+    <company>General Dynamics Advanced Information Systems</company>
+    <location>Fairfax, VA</location>
+    <title>Web Developer &amp; Scrum Master</title>
+    <start_date>June 2011</start_date>
+    <end_date>Present</end_date>
+    <descriptions>
+      <description>_Scrum master_ and developer for seven person _Agile development_ team.</description>
+      <description>Held weekly face-to-face meetings with customer and product owner.  Delivered production-ready software every two weeks.</description>
+      <description>Built indicator database using _Ruby on Rails_ / _jQuery_ / _CSS_ / _PostgreSQL_ to coordinate cyber information sharing and manage cyber risks for US-CERT and the Department of Homeland Security</description>
+      <description>Developed on _Linux_, source managed using _Git SCM_, code reviews with _GitLab_, continuous integration using _Jenkins_, _Test Driven Development (TDD)_ using _Cucumber_ / _RSpec_, deployed using _Capistrano_, and documented using _LaTeX_.</description>
+      <description>Prototyped storage application for network intrusion prevention and detection system using _PHP CodeIgniter_.</description>
+    </descriptions>
+  </job>
+</resume>

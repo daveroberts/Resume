@@ -1,0 +1,162 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+% and the actual content starts here
+\begin{document}
+
+{\LARGE \textbf{{\color{blue!50!black}David Roberts}}}\hfill dave.a.roberts@gmail.com
+
+{\hfill 440.503.5974}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\subsection*{Certifications}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Security Clearance]
+	US Citizen with {\color{blue} security clearance}
+	\item[PMI ACP:]
+	{\color{blue} Agile Certified Practitioner} since September 2012
+\end{description*}
+\end{indentsection}
+
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+
+    
+  \item
+	\headerrow
+		{\textbf{General Dynamics Advanced Information Systems}}
+		{\textbf{Fairfax, VA}}
+	\\
+  	\headerrow
+		{\emph{Web Developer \& Scrum Master}}
+		{\emph{June 2011 -- Present}}
+	\begin{itemize*}
+
+  
+		\item {\color{blue} Scrum master} and developer for seven person {\color{blue} Agile development} team.
+  
+		\item Held weekly face-to-face meetings with customer and product owner.  Delivered production-ready software every two weeks.
+  
+		\item Built indicator database using {\color{blue} Ruby on Rails} / {\color{blue} jQuery} / {\color{blue} CSS} / {\color{blue} PostgreSQL} to coordinate cyber information sharing and manage cyber risks for US-CERT and the Department of Homeland Security
+  
+		\item Developed on {\color{blue} Linux}, source managed using {\color{blue} Git SCM}, code reviews with {\color{blue} GitLab}, continuous integration using {\color{blue} Jenkins}, {\color{blue} Test Driven Development (TDD)} using {\color{blue} Cucumber} / {\color{blue} RSpec}, deployed using {\color{blue} Capistrano}, and documented using {\color{blue} \LaTeX}.
+  
+		\item Prototyped storage application for network intrusion prevention and detection system using {\color{blue} PHP CodeIgniter}.
+  
+	\end{itemize*}
+  
+
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Miami University}}
+		{\textbf{Oxford, OH}}
+	\\
+	\headerrow
+		{\emph{Computer Science, Master of Computer Science}}
+		{\emph{2005 -- 2007}}
+	\begin{itemize*}
+		\item Graduated 2007 Cumulative GPA 3.5
+		\item Research Area: Interdisciplinary tool between Mechanical Engineering and Systems Analysis to study discontinuous systems
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Miami University}}
+		{\textbf{Oxford, OH}}
+	\\
+	\headerrow
+		{\emph{Systems Analysis, Bachelor of Applied Science}}
+		{\emph{2001 -- 2005}}
+	\begin{itemize*}
+		\item Double major: Systems Analysis and Computer Science
+    \item Taught supplemental courses to provide help for students taking Java courses
+		\item Graduated 2005 \emph{Cum Laude} 3.5 GPA
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Projects / Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[GitHub]
+	A full list of my personal projects can be found at \href{http://github.com/daveroberts}{github.com/daveroberts} including:
+	\begin{itemize*}
+    \item[>] \textbf{Happy Puppy: }I created a simple {\color{blue} MVC PHP} web framework with an Object Relational Mapper (ORM).
+    \item[>] \textbf{vim scripting: }Scripting/programs for my {\color{blue} VIM} configuration.
+    \item[>] \textbf{RubyScrapers: }Web scrapers used to lift information from websites without an API made with Ruby and Nokogiri.
+    \item[>] \textbf{C$^\sharp$ Apps: }Created a simple lexical analyzer and expression parser to improve on the basic calculator in Windows.  Created applications to rename all files in a directory with regular expressions.
+	\end{itemize*}
+	\item[SQL:]I have used SQL at every job listed in my experience, varying from Access to SQLite to SQL Server.  I also have experience with {\color{blue} NoSQL} solutions such as {\color{blue} MongoDB}.
+	\item[Real Time Applications:]I am interested in real time web technologies such as {\color{blue} Meteor}, {\color{blue} Node.js}, and other JavaScript MVC frameworks like {\color{blue} Angular JS} and {\color{blue} backbone.js}  Presently, these frameworks aren't widely used.  If your company uses these frameworks, I am very interested.
+	\item[Functional Programming:]I believe in learning multiple programming paradigms.  I have successfully completed the course {\color{blue} Functional Programming Principles in Scala}, taught by the creator of Scala and Java compiler designer Martin Odersky.
+
+\end{description*}
+\end{indentsection}
+
+\end{document}
