@@ -1,4 +1,17 @@
 <resume>
+  <name>David Roberts</name>
+  <email>dave.a.roberts@gmail.com</email>
+  <phone>440.503.5974</phone>
+  <certifications>
+    <certification>
+      <name>Security Clearance</name>
+      <description>US Citizen with _security clearance_</description>
+    </certification>
+    <certification>
+      <name>PMI ACP</name>
+      <description>_Agile Certified Practitioner_ since September 2012</description>
+    </certification>
+  </certifications>
   <job>
     <company>General Dynamics Advanced Information Systems</company>
     <location>Fairfax, VA</location>
@@ -11,6 +24,20 @@
       <description>Built indicator database using _Ruby on Rails_ / _jQuery_ / _CSS_ / _PostgreSQL_ to coordinate cyber information sharing and manage cyber risks for US-CERT and the Department of Homeland Security</description>
       <description>Developed on _Linux_, source managed using _Git SCM_, code reviews with _GitLab_, continuous integration using _Jenkins_, _Test Driven Development (TDD)_ using _Cucumber_ / _RSpec_, deployed using _Capistrano_, and documented using _LaTeX_.</description>
       <description>Prototyped storage application for network intrusion prevention and detection system using _PHP CodeIgniter_.</description>
+      <description>My random property _here_.</description>
+    </descriptions>
+  </job>
+  <job>
+    <company>EMC (NetWitness)</company>
+    <location>Reston, VA</location>
+    <title>Software Engineer</title>
+    <start_date>October 2010</start_date>
+    <end_date>June 2011</end_date>
+    <descriptions>
+      <description>Produced real-time network forensic engineering software.</description>
+      <description>Developed applications using _Java_ / _Spring_ / _Hibernate_ to monitor and analyze network threats.</description>
+      <description>Maintained client management software used to monitor sensitive information on workplace systems, written in _C#_</description>
+      <description>Utilized _Amazon EC2_ cloud services to perform _service oriented architecture_ tasks for NetWitness Spectrum. Spectrum was the winner of the 2011 American Business Awards New Product and Service of the Year Stevie Award.</description>
     </descriptions>
   </job>
 </resume>

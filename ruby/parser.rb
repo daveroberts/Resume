@@ -9,6 +9,7 @@ def tf(input)
   str = input
   str = str.gsub("&"){'\&'}
   str = str.gsub(/_(.*?)_/,'{\color{blue} \1}')
+  str = str.gsub("C#", "C$^\\sharp$")
   str = str.gsub("LaTeX", '\\LaTeX')
   str
 end
