@@ -1,21 +1,20 @@
+#!/usr/bin/env ruby
+
 require 'pry'
 require 'erb'
 require './job.rb'
 require './resume.rb'
+require 'trollop'
 
-resume = Resume.new('resume.xml')
-
-def tf(input)
-  str = input
-  str = str.gsub("&"){'\&'}
-  str = str.gsub(/_(.*?)_/,'{\color{blue} \1}')
-  str = str.gsub("C#", "C$^\\sharp$")
-  str = str.gsub("LaTeX", '\\LaTeX')
-  str
+opts = Trollop::options do
+  opt :resume, "Set resume xml file", :short => 'r', :type => String, :default => 'resume.xml'
+  opt :template, "Set template name", :short => 't', :type => String, :default => 'resume.tex.erb'
 end
 
+resume = Resume.new(opts[:resume])
+
 # get the XML data as a string
-filename = 'resume.tex.erb'
+filename = opts[:template]
 erb = ERB.new(File.read(filename))
 erb.filename = filename
 print erb.result

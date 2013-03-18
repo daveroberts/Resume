@@ -1,3 +1,13 @@
+<%
+def format(input)
+  str = input
+  str = str.gsub("&"){'\&'}
+  str = str.gsub(/_(.*?)_/,'{\color{blue} \1}')
+  str = str.gsub("C#", "C$^\\sharp$")
+  str = str.gsub("LaTeX", '\\LaTeX')
+  str
+end
+%>
 % resume.tex
 % vim:set ft=tex spell:
 
@@ -74,16 +84,16 @@
     
   \item
 	\headerrow
-		{\textbf{<%=tf(job.company)%>}}
-		{\textbf{<%=tf(job.location)%>}}
+		{\textbf{<%=format(job.company)%>}}
+		{\textbf{<%=format(job.location)%>}}
 	\\
   	\headerrow
-		{\emph{<%=tf(job.title)%>}}
-		{\emph{<%=tf(job.start_date)%> -- <%=tf(job.end_date) %>}}
+		{\emph{<%=format(job.title)%>}}
+		{\emph{<%=format(job.start_date)%> -- <%=format(job.end_date) %>}}
 	\begin{itemize*}
 
   <% job.descriptions.each do |description| %>
-    \item <%= tf(description) %>
+    \item <%= format(description) %>
   <% end %>
 	\end{itemize*}
   
