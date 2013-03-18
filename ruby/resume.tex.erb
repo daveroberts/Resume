@@ -55,9 +55,9 @@ end
 % and the actual content starts here
 \begin{document}
 
-{\LARGE \textbf{{\color{blue!50!black}David Roberts}}}\hfill dave.a.roberts@gmail.com
+{\LARGE \textbf{{\color{blue!50!black}<%= format(resume.name)%>}}}\hfill <%= format(resume.email)%>
 
-{\hfill 440.503.5974}
+{\hfill <%= format(resume.phone) %>}
 
 \vspace{1em}
 \hrule
@@ -68,10 +68,10 @@ end
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[Security Clearance]
-	US Citizen with {\color{blue} security clearance}
-	\item[PMI ACP:]
-	{\color{blue} Agile Certified Practitioner} since September 2012
+<% resume.certifications.each do |certification| %>
+  \item[<%= format(certification.name) %>:]
+  <%= format(certification.description) %>
+<% end %>
 \end{description*}
 \end{indentsection}
 
@@ -81,7 +81,7 @@ end
 	\parskip=0.1em
 
 <% resume.jobs.each do |job| %>
-    
+
   \item
 	\headerrow
 		{\textbf{<%=format(job.company)%>}}
@@ -96,7 +96,7 @@ end
     \item <%= format(description) %>
   <% end %>
 	\end{itemize*}
-  
+
 <% end %>
 
 \end{itemize}
@@ -109,32 +109,23 @@ end
 \begin{itemize}
 	\parskip=0.1em
 
-	\item
-	\headerrow
-		{\textbf{Miami University}}
-		{\textbf{Oxford, OH}}
-	\\
-	\headerrow
-		{\emph{Computer Science, Master of Computer Science}}
-		{\emph{2005 -- 2007}}
-	\begin{itemize*}
-		\item Graduated 2007 Cumulative GPA 3.5
-		\item Research Area: Interdisciplinary tool between Mechanical Engineering and Systems Analysis to study discontinuous systems
-	\end{itemize*}
+<% resume.educations.each do |education| %>
 
 	\item
 	\headerrow
-		{\textbf{Miami University}}
-		{\textbf{Oxford, OH}}
+    {\textbf{<%= format(education.name) %>}}
+    {\textbf{<%= format(education.location) %>}}
 	\\
 	\headerrow
-		{\emph{Systems Analysis, Bachelor of Applied Science}}
-		{\emph{2001 -- 2005}}
+    {\emph{<%= format(education.degree) %>}}
+    {\emph{<%= format(education.years) %>}}
 	\begin{itemize*}
-		\item Double major: Systems Analysis and Computer Science
-    \item Taught supplemental courses to provide help for students taking Java courses
-		\item Graduated 2005 \emph{Cum Laude} 3.5 GPA
+  <% education.notes.each do |note| %>
+    \item <%= format(note) %>
+  <% end %>
 	\end{itemize*}
+
+<% end %>
 
 \end{itemize}
 
